@@ -31,23 +31,11 @@ void bubble_sort(int *array, size_t size)
 				array[x] = array[x + 1];
 				array[x + 1] = tmp;
 				print_array(array, size);
+				is_sorted = 1;
 			}
 		}
 
-		/**
-		 * check if the array is sorted.
-		 * We increase the is_sorted variable,
-		 * until we get to the size of the array,
-		 * which means the array is sorted.
-		 */
-
-		for (x = 0; x < new_size; x++)
-		{
-			if (array[x] < array[x + 1])
-				is_sorted += 1;
-		}
-
-		if (is_sorted == new_size)
+		if (is_sorted == 0)
 			break;
 	}
 }
