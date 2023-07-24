@@ -11,11 +11,11 @@
 
 void bubble_sort(int *array, size_t size)
 {
-	size_t x, new_size;
+	size_t x, new_size, is_sorted;
 
 	while (1)
 	{
-		size_t is_sorted = 0;
+		is_sorted = 0;
 		new_size = size - 1;
 
 		for (x = 0; x < new_size; x++)
